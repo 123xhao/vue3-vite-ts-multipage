@@ -3,7 +3,7 @@ import glob from 'fast-glob'
 import { join } from 'path'
 export const getEntryPath = () => {
     const pageEntry = {}
-    glob.sync("**/index.html").forEach((entry) => {
+    glob.sync("src/pages/**/index.html").forEach((entry) => {
       const pathArr = entry.split("/");
       const name = pathArr[pathArr.length - 2];
       pageEntry[name] = join(process.cwd(), `/src/pages/${name}/index.html`)

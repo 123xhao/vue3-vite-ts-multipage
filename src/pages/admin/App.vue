@@ -4,8 +4,8 @@
 <template>
   <!--Vue3组件中的模板结构可以没有根标签-->
   <!-- <router-view /> -->
-  <div>admin</div>
+  <img style="width: 100%;" src="@/assets/img/height.jpg" alt="" srcset="">
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
 </style>
